@@ -1,0 +1,28 @@
+{
+  "name": "react_native_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "SET NODE_ENV=test & pm2 start api.js",
+    "deep-test": "SET NODE_ENV=test & node api.js",
+    "test-stop": "pm2 stop api.js",
+    "dev": "SET NODE_ENV=dev & nodemon api.js",
+    "prod": "SET NODE_ENV=prod & pm2 start api.js",
+    "prod-stop": "pm2 stop api.js",
+    "qa": "SET NODE_ENV=qa & pm2 start api.js",
+    "qa-stop": "pm2 stop api.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "express-winston": "^4.2.0",
+    "nodemon": "^2.0.4",
+    "pm2": "^4.4.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.5.5"
+  }
+}
